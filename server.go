@@ -23,7 +23,6 @@ func fetchAndUpdateCache() {
 			log.Fatalf("Error loading .env file: %v", err)
 		}
 
-		// Read the 'X_FIGMA_TOKEN' from environment variables
 		FIGMA_API_URL := os.Getenv("FIGMA_API_URL")
 		if FIGMA_API_URL == "" {
 			log.Fatal("X_FIGMA_TOKEN is not set in secrets.env file")
